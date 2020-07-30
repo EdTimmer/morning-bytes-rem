@@ -6,11 +6,67 @@
   box-sizing: inherit;
 }
 
-html {
-/* Next line defines what 1rem is */
-/* 1rem = 10px */
-  font-size: 62.5%;  
+/* Next block defines what root 1rem is */
 
+html {
+  font-size: 62.5%; 
+  /* Standard font-size is 16px.  If 16px is 100%, then 10px is 62.5% */
+  /* Here 1rem = 10px */
+}
+
+/* MEDIA QUERY MANAGER
+
+Common Breakpoints
+1800px + :      Big desktop
+1200 - 1800px:  Regular monitor -- where normal styles apply
+900 - 1200px:   Tablet landscape
+600 - 900px:    Tablet portrait
+0 - 600px:      Phone
+
+1em = 16px (our setting of base font-size does not work in media queries.
+We cannot use rem in media queries, have to use em instead
+
+px size of screen / standard root font-size = em
+
+- big-desktop:  1800px -> 112.5em   1800px / 16px = 112.5em
+- tablet-land:  1200px -> 75em      1200px / 16px = 75em
+- tablet-port:  900px -> 56.25em    900px / 16px = 56.26em
+- phone:        600px -> 37.5em     600px / 16px = 37.5em
+
+By not using px we are allowing user to change default font-size, thus giving more accessability
+
+*/
+
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }  
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }  
+}
+
+@media (max-width: 56.26em) {
+  html {
+    font-size: 50%;
+  }  
+}
+
+@media (max-width: 37.5em) {
+  html {
+    font-size: 43.75%;
+  }  
+}
+
+
+
+  /*  
+  Big desktop
+  width > 1800px 
+  */
   /* @include respond(big-desktop) { // width > 1800px
     font-size: 75%; // 1rem = 12px (12/16 = 75%)
   }
@@ -26,7 +82,7 @@ html {
   @include respond(phone) { // width < 600px
     font-size: 43.75%;  // 1rem = 7px (7/16 = 43.75%)
   } */
-}
+
 
 body {
   box-sizing: border-box;

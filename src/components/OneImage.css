@@ -1,0 +1,18 @@
+.one-image-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.one-image__photo {
+  /* width: 53rem; */
+  width: 90%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .4);
+  border-radius: 2px;
+  /* outline-offset: 2rem; */
+  position: absolute;
+  transition: all .2s;
+  /* outline: 1.5rem solid #55c57a; */
+  transform: translateY(-2rem);
+  /* z-index: 10; */
+}

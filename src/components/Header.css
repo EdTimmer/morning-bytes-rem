@@ -1,0 +1,52 @@
+.header {
+  width: 100%;
+  height: 100vh;
+  padding: 4rem;
+}
+
+.header__row {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.header__item {
+  padding: 0 4rem;
+  width: 30%;
+  text-align: center;
+}
+
+/* text */
+.header__item--text-px {
+  font-size: 40px;
+}
+
+.header__item--text-rem {
+  font-size: 4rem;
+}
+
+/* rectangle */
+
+.header__item--rectangle-px {
+  width: 50px;
+  border: 5px solid black;
+  margin: 0 auto;
+}
+
+.header__item--rectangle-rem {
+  width: 5rem;
+  border: .5rem solid black;
+  margin: 0 auto;
+}
+
+.header__item--rectangle-percent {
+  width: 20%;
+  border: .5rem solid black;
+  margin: 0 auto;
+}
+/* circle */
+
+/* triangle */
+
+
+
