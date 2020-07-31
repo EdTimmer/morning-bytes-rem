@@ -1,0 +1,24 @@
+.emblem {
+  display: flex;
+  align-items: center;
+  animation: moveInTop 1s ease-out;
+}
+
+.emblem__background {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  /* clip-path: circle(); */
+  background-color: #fff;
+  position: relative;
+}
+
+.emblem__image {
+  width: 9.5rem;
+  position: absolute;
+  transform: translateX(.1rem) translateY(-.3rem);
+}

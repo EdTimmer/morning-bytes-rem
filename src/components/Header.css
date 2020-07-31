@@ -1,7 +1,20 @@
 .header {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   padding: 4rem;
+  /* background-image: linear-gradient(100deg, 
+    rgba(255,255,255,.7) 0%,
+    rgba(255,255,255,.7) 35%, 
+    transparent 35%), 
+  url(../images/mosaic.jpg); */
+  background-image: linear-gradient(
+    to right bottom, 
+    rgba(126, 213, 111, 0.6), 
+    rgba(40, 180, 133, 0.6)),  
+  url(../images/grapes.jpg);
+  /* background-image: url(../images/mosaic.jpg); */
+  background-size: cover;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .2);
 }
 
 .header__row {
@@ -10,43 +23,95 @@
   margin: 2rem 0;
 }
 
-.header__item {
-  padding: 0 4rem;
-  width: 30%;
+/* .header__icon {    
+  font-size: 8rem;
+  margin-bottom: .5rem;
+  display: inline-block;
+  color: #fff;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: moveInTop 1s ease-out;
+} */
+
+.header-image {
+  width: 16rem;
+  /* margin-bottom: .5rem; */
+  /* display: inline-block; */
+  display: block;
+  margin: 2rem auto;
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
   text-align: center;
 }
 
-/* text */
-.header__item--text-px {
-  font-size: 40px;
+.heading-primary--main {
+  display: block;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 3.5rem;
+
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
 }
 
-.header__item--text-rem {
-  font-size: 4rem;
+.heading-primary--sub {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.75rem;
+  animation: moveInRight 1s ease-out;
 }
 
-/* rectangle */
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
 
-.header__item--rectangle-px {
-  width: 50px;
-  border: 5px solid black;
-  margin: 0 auto;
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
-.header__item--rectangle-rem {
-  width: 5rem;
-  border: .5rem solid black;
-  margin: 0 auto;
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
-.header__item--rectangle-percent {
-  width: 20%;
-  border: .5rem solid black;
-  margin: 0 auto;
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem);
+  }
+
+  80% {
+    transform: translateY(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-/* circle */
-
-/* triangle */
-
-
-

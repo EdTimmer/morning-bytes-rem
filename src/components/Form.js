@@ -7,7 +7,7 @@ const Form = () => {
     <div className="section-book">
       <div className="book">
         <div className="u-margin-bottom-big">
-          <h2 className="heading-primary">book your trip now!</h2>
+          <h2 className="heading-secondary">book your trip!</h2>
         </div>
 
         <div className="book__form">
