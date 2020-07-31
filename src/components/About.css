@@ -1,0 +1,20 @@
+.about {
+  padding: 4rem;
+}
+
+.about-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 2rem 0;
+  
+}
+
+.about-description {
+  width: 55%;
+  margin-right: 5%;
+}
+
+.about-flip-image {
+  width: 40%;
+}

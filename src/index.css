@@ -8,10 +8,10 @@
 
 /* Next block defines what root 1rem is */
 
+/* Standard font-size is 16px.  If 16px is 100%, then 10px is 62.5% */
+/* Here 1rem = 10px */
 html {
   font-size: 62.5%; 
-  /* Standard font-size is 16px.  If 16px is 100%, then 10px is 62.5% */
-  /* Here 1rem = 10px */
 }
 
 /* MEDIA QUERY MANAGER
@@ -23,78 +23,84 @@ Common Breakpoints
 600 - 900px:    Tablet portrait
 0 - 600px:      Phone
 
-1em = 16px (our setting of base font-size does not work in media queries.
-We cannot use rem in media queries, have to use em instead
+1em = 16px in most browsers
+Our setting of base font-size does not work in media queries.
+Media queries, by rule, do not pay attention to any rules that we set up.
+Therefor, we cannot use our rem rule in media queries, have to use em instead.  
+If we are to use rem units in media queries, they will not be 1rem = 10px, our rule
+will be ignred and 1rem will be equal to user set browser font-size, which is usually
+16px.
 
 px size of screen / standard root font-size = em
 
 - big-desktop:  1800px -> 112.5em   1800px / 16px = 112.5em
 - tablet-land:  1200px -> 75em      1200px / 16px = 75em
-- tablet-port:  900px -> 56.25em    900px / 16px = 56.26em
+- tablet-port:  900px -> 56.25em    900px / 16px = 56.25em
 - phone:        600px -> 37.5em     600px / 16px = 37.5em
 
 By not using px we are allowing user to change default font-size, thus giving more accessability
 
 */
 
+/* PRIMARY EXAMPLE */
+
+/* screen size: >= 1800px; html font-size: 12px */
 @media (min-width: 112.5em) {
   html {
     font-size: 75%;
   }  
 }
 
+/* screen size: <= 1200px; html font-size: 9px */
 @media (max-width: 75em) {
   html {
     font-size: 56.25%;
   }  
 }
 
-@media (max-width: 56.26em) {
+/* screen size: <= 900px; html font-size: 8px */
+@media (max-width: 56.25em) {
   html {
     font-size: 50%;
   }  
 }
 
-/* @media (max-width: 50em) {
-  html {
-    font-size: 48%;
-  }  
-}
-
-@media (max-width: 43.75em) {
-  html {
-    font-size: 45%;
-  }  
-} */
-
+/* screen size: <= 600px; html font-size: 7px */
 @media (max-width: 37.5em) {
   html {
     font-size: 43.75%;
   }  
 }
 
+/* SECONDARY EXAMPLE */
 
+/* screen size: >= 1800px; html font-size: 12px */
+/* @media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }  
+} */
 
-  /*  
-  Big desktop
-  width > 1800px 
-  */
-  /* @include respond(big-desktop) { // width > 1800px
-    font-size: 75%; // 1rem = 12px (12/16 = 75%)
-  }
+/* screen size: <= 1200px; html font-size: 9px */
+/* @media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }  
+} */
 
-  @include respond(tab-land) { // width < 1200px
-    font-size: 56.25%;  // 1rem = 9px (9/16 = 56.25%)
-  }
+/* screen size: <= 900px; html font-size: 7px */
+/* @media (max-width: 56.25em) {
+  html {
+    font-size: 43.75%;
+  }  
+} */
 
-  @include respond(tab-port) { // width < 900px
-    font-size: 50%; // 1rem = 8px (8/16 = 50%)
-  }
-
-  @include respond(phone) { // width < 600px
-    font-size: 43.75%;  // 1rem = 7px (7/16 = 43.75%)
-  } */
-
+/* screen size: <= 600px; html font-size: 5px */
+/* @media (max-width: 37.5em) {
+  html {
+    font-size: 31.25%;
+  }  
+} */
 
 body {
   box-sizing: border-box;
@@ -104,7 +110,4 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: #777;
-  /* @include respond(tab-port) {
-    padding: 0;
-  } */
 }

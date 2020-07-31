@@ -4,13 +4,13 @@ import ButtonComponent from './ButtonComponent';
 
 const Form = () => {
   return (
-    <div className="section-book">
-      <div className="book">
-        <div className="u-margin-bottom-big">
+    <div className="form-container">
+      <div className="form">
+        <div className="u-margin-bottom-small">
           <h2 className="heading-secondary">book your trip!</h2>
         </div>
 
-        <div className="book__form">
+        <div className="form__info">
           <div className="form__group">
             <input
               type="text"
@@ -37,7 +37,7 @@ const Form = () => {
             </label>
           </div>
 
-          <div className="form__group u-margin-bottom-medium">
+          <div className="form__group u-margin-bottom-small">
             <div className="form__radio-group">
               <input
                 type="radio"

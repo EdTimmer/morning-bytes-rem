@@ -1,0 +1,23 @@
+.logo-small {
+  display: flex;
+  align-items: center;
+}
+
+.logo-small__background {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  /* clip-path: circle(); */
+  background-color: #fff;
+  position: relative;
+}
+
+.logo-small__image {
+  width: 6.5rem;
+  position: absolute;
+  transform: translateX(.1rem) translateY(-.3rem);
+}

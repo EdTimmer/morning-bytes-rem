@@ -1,10 +1,10 @@
-.emblem {
+.logo {
   display: flex;
   align-items: center;
   animation: moveInTop 1s ease-out;
 }
 
-.emblem__background {
+.logo__background {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -17,7 +17,7 @@
   position: relative;
 }
 
-.emblem__image {
+.logo__image {
   width: 9.5rem;
   position: absolute;
   transform: translateX(.1rem) translateY(-.3rem);

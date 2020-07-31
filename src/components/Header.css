@@ -14,7 +14,7 @@
   url(../images/grapes.jpg);
   /* background-image: url(../images/mosaic.jpg); */
   background-size: cover;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .2);
+  /* box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .2); */
 }
 
 .header__row {

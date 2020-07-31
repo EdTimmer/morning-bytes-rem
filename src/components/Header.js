@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-import Emblem from "./Emblem";
+import Logo from "./Logo";
 
 // import lanzarote from '../images/lanzarote.png';
 // import abstract from '../images/abstract.png';
@@ -10,7 +10,7 @@ const Header = () => {
     <div className="header">
       <div className="header__row u-margin-top-big">
 
-        <Emblem />
+        <Logo />
 
       </div>
 
