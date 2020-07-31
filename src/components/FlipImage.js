@@ -3,7 +3,7 @@ import "./FlipImage.css";
 
 const FlipImage = () => {
   return (
-    <div className="one-image-container">
+    <div className="flip-image-container">
       <div className="card">
         <div className="card__side card__side--front">
           &nbsp;

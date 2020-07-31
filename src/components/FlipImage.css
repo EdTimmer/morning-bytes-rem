@@ -1,20 +1,7 @@
-.one-image-container {
+.flip-image-container {
   display: flex;
   justify-content: center;
   position: relative;
-}
-
-.one-image__photo {
-  /* width: 53rem; */
-  width: 90%;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .4);
-  border-radius: 2px;
-  /* outline-offset: 2rem; */
-  position: absolute;
-  transition: all .2s;
-  /* outline: 1.5rem solid #55c57a; */
-  transform: translateY(-2rem);
-  /* z-index: 10; */
 }
 
 .card {
@@ -22,9 +9,8 @@
   -moz-perspective: 150rem; 
   position: relative;  
   width: 90%;
-  height:40rem;
+  height: 40rem;
   background-color: transparent;
-  /* border-radius: 5px; */
 }
 
 .card__side {
@@ -35,12 +21,7 @@
   top: 0;
   left: 0;
   backface-visibility: hidden;
-  /* border-radius: 5px;
-  overflow: hidden; */
-  /* box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .15); */
-  /* background-color: #f7f7f7; */
   background-color: transparent;
-  /* border-radius: 2px; */
 }
 
 .card__side--front {
@@ -50,8 +31,6 @@
   height: 40rem;
   background-position: center center;
   background-repeat: no-repeat;
-  /* border-radius: 5px;
-  overflow: hidden; */
 }
 
 .card__side--back {
@@ -61,8 +40,6 @@
   background-position: center center;
   width: 100%;
   background-repeat: no-repeat;
-  /* border-radius: 5px;
-  overflow: hidden; */
 }
 
 .card:hover .card__side--front {
@@ -72,18 +49,3 @@
 .card:hover .card__side--back {
   transform: rotateY(0);
 }
-
-/* .card__picture {
-  background-image: url(../images/el_golfo.jpg);  
-  background-size: 100% auto;
-  width: 100%;
-  height: 35rem;  
-  background-position: center center;
-  background-repeat: no-repeat;
-  overflow: hidden;
-} */
-
-  /* background-image: url(../images/el_golfo.jpg);
-  background-position: center top;
-  background-size: 100% auto;
-  background-repeat: no-repeat; */

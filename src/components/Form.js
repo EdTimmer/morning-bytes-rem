@@ -7,7 +7,7 @@ const Form = () => {
     <div className="form-container">
       <div className="form">
         <div className="u-margin-bottom-small">
-          <h2 className="heading-secondary">book your trip!</h2>
+          <h2 className="heading-secondary">book your trip now!</h2>
         </div>
 
         <div className="form__info">
@@ -47,7 +47,7 @@ const Form = () => {
               />
               <label htmlFor="small" className="form__radio-label">
                 <span className="form__radio-button"></span>
-                Small tour group
+                Small group
               </label>
             </div>
 
@@ -60,12 +60,12 @@ const Form = () => {
               />
               <label htmlFor="large" className="form__radio-label">
                 <span className="form__radio-button"></span>
-                Large tour group
+                Large group
               </label>
             </div>
           </div>
 
-          <div className="form__group">
+          <div className="form__group u-margin-bottom-medium">
             <ButtonComponent label={"Next step"} arrow={true} />
           </div>
         </div>
