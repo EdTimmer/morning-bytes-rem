@@ -1,7 +1,7 @@
 .flip-image-container {
   display: flex;
   justify-content: center;
-  position: relative;
+  /* position: relative; */
 }
 
 .card {
@@ -10,7 +10,7 @@
   position: relative;  
   width: 90%;
   height: 40rem;
-  background-color: transparent;
+  /* background-color: transparent; */
 }
 
 .card__side {
@@ -18,10 +18,10 @@
   height: 40rem;
   transition: all .8s ease;
   position: absolute;
-  top: 0;
-  left: 0;
+  /* top: 0;
+  left: 0; */
   backface-visibility: hidden;
-  background-color: transparent;
+  /* background-color: transparent; */
 }
 
 .card__side--front {

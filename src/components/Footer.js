@@ -63,7 +63,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Company
+                Giant Machines
               </a>
             </li>
           </ul>

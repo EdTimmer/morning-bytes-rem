@@ -6,7 +6,7 @@ const Form = () => {
   return (
     <div className="form-container">
       <div className="form">
-        <div className="u-margin-bottom-small">
+        <div className="u-margin-bottom-medium">
           <h2 className="heading-secondary">book your trip now!</h2>
         </div>
 
