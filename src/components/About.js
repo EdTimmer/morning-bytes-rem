@@ -55,17 +55,84 @@ const About = () => {
           </p>
 
           <div className="u-margin-bottom-small">
-            <h2 className="heading-tertiary">
-              Fire mountains out of this world
-            </h2>
+            <h2 className="heading-tertiary">Island as art</h2>
           </div>
 
           <p className="paragraph">
-            Lanzarote was born through fiery eruptions and has solidified lava
-            streams as well as extravagant rock formations. The island emerged
-            about 15 million years ago as product of the Canary hotspot. The
-            greatest recorded eruptions occurred between 1730 and 1736 in the
-            area now designated Timanfaya National Park.
+            <a
+              href="https://artzine.com/articles/cesar-manrique-the-artist-who-created-tourist-attractions-to-avoid-tourism"
+              className="about__link"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              César Manrique &nbsp;
+            </a>
+            (24 April 1919 - 25 September 1992) was a Spanish artist, sculptor,
+            architect and activist from Lanzarote. His legacy on the island
+            includes the art, culture and tourism centre at
+            <a
+              href="https://en.wikipedia.org/wiki/Jameos_del_Agua"
+              className="about__link"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              &nbsp; Jameos del Agua &nbsp;
+            </a>
+            (1963-87); his Volcano House,
+            <a
+              href="http://fcmanrique.org/casas-museo-visitas/fundacion-cesar-manrique-tahiche/?lang=en"
+              className="about__link"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              &nbsp; Taro de Tahiche &nbsp;
+            </a>
+            (1968); the restaurant at the restored
+            <a
+              href="https://en.wikipedia.org/wiki/Castillo_de_San_Jos%C3%A9"
+              className="about__link"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              &nbsp; Castillo de San José &nbsp;
+            </a>
+            at Arrecife (1976); the
+            <a
+              href="https://lanzaroteinformation.co.uk/timanfaya-vistors-centre/"
+              className="about__link"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              &nbsp; visitors center &nbsp;
+            </a>
+            at the Timanfaya National Park (1971); his
+            <a
+              href="http://fcmanrique.org/casas-museo-visitas/casa-museo-cesar-manrique-haria/?lang=en"
+              className="about__link"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              &nbsp; Palm Grove House &nbsp;
+            </a>
+            at Haria (1986); the
+            <a
+              href="https://www.cactlanzarote.com/en/cact/mirador-del-rio/"
+              className="about__link"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              &nbsp; Mirador del Rio &nbsp;
+            </a>
+            (1973), and the
+            <a
+              href="https://www.cactlanzarote.com/en/cact/jardin-de-cactus/"
+              className="about__link"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              &nbsp; Jardin de Cactus &nbsp;
+            </a>
+            at Guatiza.
           </p>
 
           <ButtonText label={"Learn more"} arrow={true} />
