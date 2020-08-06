@@ -25,6 +25,7 @@
 .paragraph {
   font-size: 1.6rem;
   margin-bottom: 3rem;
+  white-space: pre-wrap;
 }
 
 .u-center-text {

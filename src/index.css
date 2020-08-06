@@ -10,8 +10,9 @@
 
 /* Standard font-size is 16px.  If 16px is 100%, then 10px is 62.5% */
 /* Here 1rem = 10px */
+
 html {
-  font-size: 62.5%; 
+  font-size: 62.5%;
 }
 
 /* MEDIA QUERY MANAGER
@@ -26,9 +27,9 @@ Common Breakpoints
 1em = 16px in most browsers
 Our setting of base font-size does not work in media queries.
 Media queries, by rule, do not pay attention to any rules that we set up.
-Therefor, we cannot use our rem rule in media queries, have to use em instead.  
+Therefore, we cannot use our rem rule in media queries, have to use em instead.  
 If we are to use rem units in media queries, they will not be 1rem = 10px, our rule
-will be ignred and 1rem will be equal to user set browser font-size, which is usually
+will be ignored and 1rem will be equal to user set browser font-size, which is usually
 16px.
 
 px size of screen / standard root font-size = em
@@ -71,36 +72,6 @@ By not using px we are allowing user to change default font-size, thus giving mo
     font-size: 43.75%;
   }  
 }
-
-/* SECONDARY EXAMPLE */
-
-/* screen size: >= 1800px; html font-size: 12px */
-/* @media (min-width: 112.5em) {
-  html {
-    font-size: 75%;
-  }  
-} */
-
-/* screen size: <= 1200px; html font-size: 9px */
-/* @media (max-width: 75em) {
-  html {
-    font-size: 56.25%;
-  }  
-} */
-
-/* screen size: <= 900px; html font-size: 7px */
-/* @media (max-width: 56.25em) {
-  html {
-    font-size: 43.75%;
-  }  
-} */
-
-/* screen size: <= 600px; html font-size: 5px */
-/* @media (max-width: 37.5em) {
-  html {
-    font-size: 31.25%;
-  }  
-} */
 
 body {
   box-sizing: border-box;
