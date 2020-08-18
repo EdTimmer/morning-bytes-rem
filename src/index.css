@@ -15,36 +15,6 @@ html {
   font-size: 62.5%;
 }
 
-/* MEDIA QUERY MANAGER
-
-Common Breakpoints
-1800px + :      Big desktop
-1200 - 1800px:  Regular monitor -- where normal styles apply
-900 - 1200px:   Tablet landscape
-600 - 900px:    Tablet portrait
-0 - 600px:      Phone
-
-1em = 16px in most browsers
-Our setting of base font-size does not work in media queries.
-Media queries, by rule, do not pay attention to any rules that we set up.
-Therefore, we cannot use our rem rule in media queries, have to use em instead.  
-If we are to use rem units in media queries, they will not be 1rem = 10px, our rule
-will be ignored and 1rem will be equal to user set browser font-size, which is usually
-16px.
-
-px size of screen / standard root font-size = em
-
-- big-desktop:  1800px -> 112.5em   1800px / 16px = 112.5em
-- tablet-land:  1200px -> 75em      1200px / 16px = 75em
-- tablet-port:  900px -> 56.25em    900px / 16px = 56.25em
-- phone:        600px -> 37.5em     600px / 16px = 37.5em
-
-By not using px we are allowing user to change default font-size, thus giving more accessability
-
-*/
-
-/* PRIMARY EXAMPLE */
-
 /* screen size: >= 1800px; html font-size: 12px */
 @media only screen and (min-width: 112.5em) {
   html {
