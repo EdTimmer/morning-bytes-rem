@@ -27,23 +27,27 @@ const About = () => {
               target="_blank"
             >
               Lanzarote
-            </a> is a Spanish island, the northernmost and easternmost of the
-            autonomous <a
+            </a>{' '}
+            is a Spanish island, the northernmost and easternmost of the
+            autonomous{' '}
+            <a
               href="https://en.wikipedia.org/wiki/Canary_Islands"
               className="about__link"
               rel="noopener noreferrer"
               target="_blank"
             >
               Canary Islands
-            </a> in the Atlantic Ocean. Located in the centre-west of the
-            island is <a
+            </a>{' '}
+            in the Atlantic Ocean. Located in the centre-west of the island is{' '}
+            <a
               href="https://en.wikipedia.org/wiki/Timanfaya_National_Park"
               className="about__link"
               rel="noopener noreferrer"
               target="_blank"
             >
               Timanfaya National Park
-            </a>, one of its main attractions. The island was declared a biosphere
+            </a>
+            , one of its main attractions. The island was declared a biosphere
             reserve by UNESCO in 1993.
           </p>
 
@@ -53,18 +57,19 @@ const About = () => {
 
           <p className="paragraph">
             <a
-              href="https://artzine.com/articles/cesar-manrique-the-artist-who-created-tourist-attractions-to-avoid-tourism"
+              href="https://en.wikipedia.org/wiki/C%C3%A9sar_Manrique"
               className="about__link"
               rel="noopener noreferrer"
               target="_blank"
             >
               César Manrique
-            </a> (24 April 1919 - 25 September 1992) was a Spanish artist, sculptor,
+            </a>{' '}
+            (24 April 1919 - 25 September 1992) was a Spanish artist, sculptor,
             architect and activist from Lanzarote. His legacy on the island
             includes the art, culture, and many tourist attractions.
           </p>
 
-          <ButtonText label={"Learn more"} arrow={true} />
+          <ButtonText label={'Learn more'} arrow={true} />
         </div>
 
         <div className="about-flip-image">
